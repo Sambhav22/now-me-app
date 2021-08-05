@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import HouseIcon from "@material-ui/icons/House";
 import FeedbackSharpIcon from "@material-ui/icons/FeedbackSharp";
 import AddSharpIcon from "@material-ui/icons/AddSharp";
@@ -8,10 +8,34 @@ import FooterItem from "./FooterItem";
 
 const Index = () => {
   const [headerItems] = useState([
-    {text: 'Search'},
-    {text: 'Contacts'},
-    {text: 'Analytics'},
-  ])
+    { text: "Search" },
+    { text: "Contacts" },
+    { text: "Analytics" },
+  ]);
+
+  const [middleItems] = useState([
+    {
+      url: "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+      name: "San Francisco",
+      no: "8845654123",
+    },
+    {
+      url: "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+      name: "San Francisco",
+      no: "8845654123",
+    },
+    {
+      url: "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+      name: "San Francisco",
+      no: "8845654123",
+    },
+    {
+      url: "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+      name: "San Francisco",
+      no: "8845654123",
+    },
+  ]);
+
   return (
     <div className="container">
       <div>
@@ -26,22 +50,17 @@ const Index = () => {
             <HouseIcon className="user-info__icon" />
           </div>
           <div className="menu">
-            {headerItems.map((item) => <HeaderItem text={item.text} />)}
+            {headerItems.map((item) => (
+              <HeaderItem text={item.text} />
+            ))}
           </div>
         </div>
         <div className="middle">
           <div className="middle__heading">Inboxes</div>
           <div className="middle__menu">
-            <MiddleItem
-              url="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              name="San Francisco"
-              no={8845654123}
-            />
-            <MiddleItem
-              url="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              name="Montreal"
-              no={8845654123}
-            />
+            {middleItems.map((item) => (
+              <MiddleItem url={item.url} name={item.name} no={item.no} />
+            ))}
           </div>
         </div>
         <div className="footer">
