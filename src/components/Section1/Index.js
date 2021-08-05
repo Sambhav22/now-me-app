@@ -36,6 +36,19 @@ const Index = () => {
     },
   ]);
 
+  const [footerItems] = useState([
+    {
+      url: "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+      name: "San Francisco",
+      no: "8845654123",
+    },
+    {
+      url: "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+      name: "San Francisco",
+      no: "8845654123",
+    },
+  ]);
+
   return (
     <div className="container">
       <div>
@@ -66,16 +79,9 @@ const Index = () => {
         <div className="footer">
           <div className="middle__heading">Your team</div>
           <div className="middle__menu">
-            <FooterItem
-              url="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              name="Robert"
-              no={8845654123}
-            />
-            <FooterItem
-              url="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              name="Kimberly"
-              no={8845654123}
-            />
+            {footerItems.map((item) => (
+              <FooterItem url={item.url} name={item.name} no={item.no} />
+            ))}
             <div className="invite">
               <AddSharpIcon className="invite__icon" />
               <div className="invite__text">Invite your team</div>
