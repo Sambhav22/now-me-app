@@ -1,0 +1,118 @@
+$container-bg-color: #fbfbfc;
+$border-color: #d5d5d5;
+$hover-color: #efeff2;
+
+.container {
+  font-size: 0.9rem;
+  background-color: $container-bg-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header,
+.middle {
+  padding: 1rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+
+  &__image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    font-weight: 600;
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+  }
+
+  &__icon {
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+    font-size: 1.2rem !important;
+  }
+}
+
+.menu {
+  padding: 1rem 0rem;
+  border-bottom: 0.1px solid $border-color;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__text {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+    font-weight: 400;
+  }
+}
+
+.middle {
+  &__heading {
+    font-size: 0.8rem;
+  }
+
+  &__menu {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    padding: 0.5rem 0.5rem;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  &__image {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__text {
+    margin-left: 0.5rem;
+    margin-top: -0.1rem;
+  }
+
+  &__text1 {
+    font-size: 0.8rem;
+  }
+
+  &__text2 {
+    font-size: 0.7rem;
+  }
+}
+
+.footer {
+  padding-left: 1rem;
+
+  &__image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.submit {
+  padding: 1rem;
+  display: flex;
+
+  &__text {
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+  }
+}
