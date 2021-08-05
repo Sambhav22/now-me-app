@@ -1,1 +1,27 @@
-@import './styles/index.scss'
+@import "./styles/section1";
+@import "./styles/section2";
+
+$border-color: #d5d5d5;
+
+.App {
+  display: flex;
+}
+
+.section1 {
+  width: 15%;
+  border-right: 0.1px solid $border-color;
+}
+
+.section2 {
+  width: 20%;
+  border-right: 0.1px solid $border-color;
+}
+
+.section3 {
+  width: 40%;
+  border-right: 0.1px solid $border-color;
+}
+
+.section4 {
+  width: 25%;
+}

@@ -1,0 +1,38 @@
+$hover-color: #efeff2;
+
+.middle {
+  &__heading {
+    font-size: 0.8rem;
+  }
+
+  &__menu {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    padding: 0.5rem 0.5rem;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  &__image {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__text {
+    margin-left: 0.5rem;
+    margin-top: -0.1rem;
+  }
+
+  &__text1 {
+    font-size: 0.8rem;
+  }
+
+  &__text2 {
+    font-size: 0.7rem;
+  }
+}

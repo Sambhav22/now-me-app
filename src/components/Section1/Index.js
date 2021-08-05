@@ -1,6 +1,7 @@
 import React from "react";
 import HouseIcon from "@material-ui/icons/House";
 import FeedbackSharpIcon from "@material-ui/icons/FeedbackSharp";
+import AddSharpIcon from "@material-ui/icons/AddSharp";
 import HeaderItem from "./HeaderItem";
 import MiddleItem from "./MiddleItem";
 import FooterItem from "./FooterItem";
@@ -21,8 +22,8 @@ const Index = () => {
           </div>
           <div className="menu">
             <HeaderItem text="Search" />
-            <HeaderItem text="Search" />
-            <HeaderItem text="Search" />
+            <HeaderItem text="Contacts" />
+            <HeaderItem text="Analytics" />
           </div>
         </div>
         <div className="middle">
@@ -35,7 +36,7 @@ const Index = () => {
             />
             <MiddleItem
               url="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              name="San Francisco"
+              name="Montreal"
               no={8845654123}
             />
           </div>
@@ -45,14 +46,18 @@ const Index = () => {
           <div className="middle__menu">
             <FooterItem
               url="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              name="San Francisco"
+              name="Robert"
               no={8845654123}
             />
             <FooterItem
               url="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-              name="San Francisco"
+              name="Kimberly"
               no={8845654123}
             />
+            <div className="invite">
+              <AddSharpIcon className="invite__icon" />
+              <div className="invite__text">Invite your team</div>
+            </div>
           </div>
         </div>
       </div>

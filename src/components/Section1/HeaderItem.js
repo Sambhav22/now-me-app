@@ -1,7 +1,7 @@
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 
-const HeaderItem = ({text}) => {
+const HeaderItem = ({ text }) => {
   return (
     <div className="menu__item">
       <SearchIcon className="user-info__icon" />

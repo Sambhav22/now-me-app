@@ -1,0 +1,49 @@
+@import "./chat.scss";
+
+.chat {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #d5d5d5;
+  }
+
+  &__body {
+    margin-top: 0.4rem !important;
+  }
+
+  &__row1 {
+    margin-left: 0.5rem;
+    display: flex;
+  }
+
+  &__row2 {
+    display: flex;
+    margin-right: 0.5rem;
+  }
+
+  &__icon {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+
+  &__btn {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+
+    &:hover {
+      background-color: #fbfbfc;
+    }
+  }
+
+  &__open {
+    background-color: #f3f3f5;
+  }
+
+  &__unread {
+    border: 1px dashed #d5d5d5;
+  }
+
+  &__body {
+    margin-top: 1rem;
+  }
+}

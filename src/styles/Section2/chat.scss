@@ -1,0 +1,31 @@
+$bg-color: #d5d5d5;
+
+.chat {
+  &__item {
+    display: flex;
+    padding: 0.8rem;
+
+    &:hover {
+      background-color: $bg-color;
+    }
+  }
+
+  &__image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    margin-left: 0.5rem;
+  }
+
+  &__date {
+    margin-left: auto;
+  }
+
+  &__tbody {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  }
+}

@@ -1,8 +1,9 @@
-@import './headerItem.scss';
-@import './middleItem.scss';
-@import './footerItem.scss';
+@import "./headerItem.scss";
+@import "./middleItem.scss";
+@import "./footerItem.scss";
 
 $container-bg-color: #fbfbfc;
+$plus-color: #844fff;
 
 .container {
   font-size: 0.9rem;
@@ -41,6 +42,17 @@ $container-bg-color: #fbfbfc;
   }
 }
 
+.invite {
+  display: flex;
+  margin-left: 0.3rem;
+  &__icon {
+    color: $plus-color;
+  }
+
+  &__text {
+    color: $plus-color;
+  }
+}
 .submit {
   padding: 1rem;
   display: flex;

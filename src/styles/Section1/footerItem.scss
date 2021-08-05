@@ -1,0 +1,14 @@
+.footer {
+  padding-left: 1rem;
+
+  &__image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+  }
+}
