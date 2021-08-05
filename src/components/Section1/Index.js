@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HouseIcon from "@material-ui/icons/House";
 import FeedbackSharpIcon from "@material-ui/icons/FeedbackSharp";
 import AddSharpIcon from "@material-ui/icons/AddSharp";
@@ -7,6 +7,11 @@ import MiddleItem from "./MiddleItem";
 import FooterItem from "./FooterItem";
 
 const Index = () => {
+  const [headerItems] = useState([
+    {text: 'Search'},
+    {text: 'Contacts'},
+    {text: 'Analytics'},
+  ])
   return (
     <div className="container">
       <div>
@@ -21,9 +26,7 @@ const Index = () => {
             <HouseIcon className="user-info__icon" />
           </div>
           <div className="menu">
-            <HeaderItem text="Search" />
-            <HeaderItem text="Contacts" />
-            <HeaderItem text="Analytics" />
+            {headerItems.map((item) => <HeaderItem text={item.text} />)}
           </div>
         </div>
         <div className="middle">
